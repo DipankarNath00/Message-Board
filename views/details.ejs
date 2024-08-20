@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+<body>
+  <%- include('./partials/nav.ejs') %>
+  <div class="message-detail content">
+      <h1><%= title %></h1>
+      <p><strong>User:</strong> <%= message.user %></p>
+      <p><strong>Message:</strong> <%= message.text %></p>
+      <p><strong>Date Added:</strong> <%= message.added.toLocaleString() %></p>
+      <a href="/">Back to Home</a>
+  </div>
+</body>
+</html>
